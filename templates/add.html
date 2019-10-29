@@ -1,0 +1,28 @@
+{% extends "layout2.html" %}
+
+{% block title %} Add confession {% endblock %}
+
+{% block content %}
+<main>
+    <br/>
+    <div class = "container text-center centre" style="width: 400px; height:300px;">
+    <form action="" method="POST">        
+        <div class="form-group">
+            <label style="font-size: 18px;"> To whom you want to confess-</label><br/>
+            <input type="text" class="form-control" name="for_whom" >
+        </div>
+        <div>
+            <label style="font-size: 18px;">Your confession-</label><br/>
+            <textarea id = "confession" rows = "5" cols = "43" name ="description"></textarea>
+        </div><br/>
+        <div>
+            <label style="font-size: 18px;"> Who are you? (Optional) </label><br/>
+            <input type="text" class="form-control" name="identity" value="Anonymous"> 
+        </div>
+        <br/>
+        <button type="submit" class="btn btn-info">Submit</button>
+    </form>
+    </div>
+</main>
+
+{% endblock %}

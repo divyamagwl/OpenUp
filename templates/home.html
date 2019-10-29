@@ -1,0 +1,26 @@
+{% extends "layout2.html" %}
+
+{% block title %} Home {% endblock %}
+
+{% block content %}
+<main>
+    <br/>
+    <div>        
+        <a href = "{{url_for('add')}}">
+        <button class="btn btn-success btn-block"> Submit New Confession</button> </a>
+    </div><br/>
+    <div>
+        {% for some_confession in confessions %}
+        <div class="container TextBox">    
+            <h3>To: {{some_confession.for_whom}} </h3>
+            <h4>#OpenUp {{some_confession.id}}</h4>
+            <p style="font-size: 22px;">{{some_confession.description}} </p>
+            <h4>By- {{some_confession.identity}}</h4>
+            <h5>Date and Time: {{some_confession.creation_time}}</h5>
+        </div>
+        <br/>
+        {% endfor %}
+    </div>
+</main>
+{% endblock %}
+

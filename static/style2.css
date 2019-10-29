@@ -1,0 +1,40 @@
+body{
+    background-color: blue ;
+    margin: 0px;
+    padding: 0px;
+    background-image: url("images/bg2.jpg");
+  }
+
+header{ 
+    background-image: url("images/bg.jpg");
+    padding:10px;
+    background-size: 200%;
+    text-align: right;
+}
+
+main{
+	margin:5px;
+}
+
+.centre{
+    margin-top: 5%;
+    margin-bottom: 10%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+nav{
+    padding:8px;
+}
+
+.TextBox{
+    margin: 30px;
+    background-color: #ffffff;
+    border: 1px solid black;
+    opacity: 0.9;
+	transition: box-shadow 0.4s;
+}
+
+.TextBox:hover{
+	box-shadow: 0px 0px 5px 5px rgba(33,33,33,.2); 
+}

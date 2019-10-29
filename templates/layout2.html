@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <title>{% block title %}{% endblock %}</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../static/style2.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <a href = "{{ url_for ('home')}}">
+          <img src = "../static/images/OpenUp.png" width=90px alt="Logo" align="left"> </a>
+      <nav style ="font-size:18px; ">
+        <a href = "{{ url_for ('login')}}" > Logout </a>
+      </nav>
+    </header>
+    
+    {% block content %}
+    {% endblock %}
+  </body>
+</html>

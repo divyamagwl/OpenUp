@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+
+{% block title %} Login {% endblock %}
+
+{% block content %}
+    <br/><br/><br/>
+    <div class="container text-center centre" style="width: 400px; height:300px;" >
+      <h1>Login</h1>
+      <br>
+      <form name = "Loginform" action="" method="POST" >
+        <div class="form-group">
+            <input type="text" placeholder="Username" class="form-group" name="username" value="{{
+                request.form.username }}" >
+        </div>
+        <div class="form-group">
+            <input type="password" placeholder="Password" class="form-group" name="password" value="{{
+                request.form.password }}" >
+        </div>
+        <button type="submit" class="btn btn-info">Submit</button>
+      </form> 
+      {% if error %}
+        <p class="error"><strong> {{ error }} </strong>
+      {% endif %}
+    </div>
+
+{% endblock %}
+
