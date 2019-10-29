@@ -11,7 +11,7 @@
     </div><br/>
     <div>
         {% for some_confession in confessions %}
-        <div class="container TextBox">    
+        <div class="container TextBox" style="word-wrap: break-word">    
             <h3>To: {{some_confession.for_whom}} </h3>
             <h4>#OpenUp {{some_confession.id}}</h4>
             <p style="font-size: 22px;">{{some_confession.description}} </p>
